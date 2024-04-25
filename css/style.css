@@ -1,0 +1,38 @@
+*;
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+  width: 400px;
+  background-color: purple;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 10px;
+}
+
+.textInput{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 40px;
+}
+
+button{
+    padding: 10px;
+    display: block;
+}
+
+.C{
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+
+
