@@ -1,4 +1,4 @@
-*;
+*,
 *::before
 *::after{
     margin: 0;
@@ -29,6 +29,26 @@ button{
 .C{
     color: red;
     font-weight: bold;
+}
+
+/* Media query */
+@media (width < 999px)
+{
+    div{
+        width: 200px;
+        margin: auto;
+    }
+
+    .textInput{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        height: 20px;
+    }
+    
+    button{
+        padding: 5px;
+        display: block;
+    }
 }
 
 
