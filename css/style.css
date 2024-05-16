@@ -7,7 +7,7 @@
 }
 
 div{
-  width: 400px;
+  width: 350px;
   background-color: purple;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -15,15 +15,29 @@ div{
   padding: 10px;
 }
 
-.textInput{
+#textInput{
     grid-column-start: 1;
     grid-column-end: 5;
     height: 40px;
 }
 
 button{
+    background-color: rgb(237, 159, 237);
     padding: 10px;
     display: block;
+}
+
+:is(button){
+    font-weight: bolder;
+    box-shadow: purple;
+    font-size: 1.1rem;
+    transition: all 1s;
+    border-radius: 8px;
+
+    &:hover{
+        box-shadow: unset;
+        border: 3px solid palegoldenrod;
+    }
 }
 
 .C{

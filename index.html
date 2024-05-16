@@ -8,28 +8,31 @@
 </head>
 <body>
 
-<div>
-    <input type="text" class="textInput" readonly placeholder="0" data-entry>
-    <button onclick="display('1')">1</button>
-    <button onclick="display('2')">2</button>
-    <button onclick="display('3')">3</button>
-    <button class="C">C</button>
-
-    <button onclick="display('4')">4</button>
-    <button onclick="display('5')">5</button>
-    <button onclick="display('6')">6</button>
-    <button>+</button>
-
-    <button onclick="display('7')">7</button>
-    <button onclick="display('8')">8</button>
-    <button onclick="display('9')">9</button>
-    <button>-</button>
-
-    <button onclick="display('0')">0</button>
-    <button>x</button>
-    <button>÷</button>
-    <button>=</button>
-</div>
+    <form >
+        <div>
+            <input type="text" id="textInput" readonly placeholder="0" data-entry>
+            <button type="button" onclick="display('1')">1</button>
+            <button type="button" onclick="display('2')">2</button>
+            <button type="button" onclick="display('3')">3</button>
+            <button type="reset" class="C">C</button>
+        
+            <button type="button" onclick="display('4')">4</button>
+            <button type="button" onclick="display('5')">5</button>
+            <button type="button" onclick="display('6')">6</button>
+            <button type="button" onclick="display('+')">+</button>
+        
+            <button type="button" onclick="display('7')">7</button>
+            <button type="button" onclick="display('8')">8</button>
+            <button type="button" onclick="display('9')">9</button>
+            <button type="button" onclick="display('-')">-</button>
+        
+            <button type="button" onclick="display('0')">0</button>
+            <button type="button" onclick="display('*')">x</button>
+            <button type="button" onclick="display('/')">÷</button>
+        
+            <button type="button" onclick="result()" result>=</button>
+        </div>
+    </form>
    
 <script src="./script/code.js"></script>
 
