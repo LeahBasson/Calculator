@@ -7,7 +7,7 @@ function display(num){
 function result(){
     let result = document.getElementById('textInput').value;
     if(result) {
-        document.getElementById('textInput').value = eval(result);
+        document.getElementById('textInput').value = eval(result).toFixed(2);
     }
 }
 
